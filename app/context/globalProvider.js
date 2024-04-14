@@ -38,11 +38,16 @@ export const GlobalProvider = ({ children }) => {
       const res = await axios.get("/api/tasks");
 
       const sorted = res.data.sort((a, b) => {
-        return (
-          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-        );
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+  
+        // Calculate the difference in milliseconds between the current date and the completion dates of tasks a and b
+        const diffA = Math.abs(new Date() - dateA);
+        const diffB = Math.abs(new Date() - dateB);
+  
+        // Tasks with a completion date closer to the current date will have a smaller difference, so they should come first
+        return diffA - diffB;
       });
-
       setTasks(sorted);
 
       setIsLoading(false);
