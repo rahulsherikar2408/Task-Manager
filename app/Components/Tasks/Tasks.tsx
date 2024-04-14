@@ -48,7 +48,6 @@ const TaskStyled = styled.main`
   position: relative;
   padding: 2rem;
   width: 100%;
-  // background-color: #ede9e8;
   background-color: white;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -78,7 +77,7 @@ const TaskStyled = styled.main`
     justify-content: center;
 
     @media screen and (max-width: 768px) {
-      top: 3rem;
+      top: 1.6rem;
       right: 3.5rem;
     }
   }
