@@ -90,7 +90,6 @@ const SidebarStyled = styled.nav<{ collapsed: boolean }>`
   width: 320px;
   background-color: white;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-  // border-radius: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -151,7 +150,6 @@ const SidebarStyled = styled.nav<{ collapsed: boolean }>`
     padding: 1rem 0.8rem;
     position: relative;
 
-    // border: 3px solid ${(props) => props.theme.borderColor3};
     cursor: pointer;
 
     font-weight: 500;
