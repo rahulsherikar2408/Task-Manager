@@ -40,7 +40,7 @@ export default function RootLayout({
         <body className={nunito.className}>
           <NextTopLoader
             height={2}
-            color="#27AE60"
+            color="#0ab2fa"
             easing="cubic-bezier(0.53,0.21,0,1)"
           />
           <ContextProvider>
