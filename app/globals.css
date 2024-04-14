@@ -47,7 +47,7 @@ input[type="checkbox"] {
 .loader {
   width: 48px;
   height: 48px;
-  border: 5px solid #27ae60;
+  border: 5px solid #0ab2fa;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
